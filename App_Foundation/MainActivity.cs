@@ -10,6 +10,8 @@ using SupportToolbar = Android.Support.V7.Widget.Toolbar;
 using Android.Support.V7.App;
 using Android.Support.V4.Widget;
 using System.Collections.Generic;
+using com.refractored.fab;
+using Android.Support.V7.Widget;
 
 namespace DrawerLayoutUI
 {
@@ -25,6 +27,10 @@ namespace DrawerLayoutUI
 		private ArrayAdapter mRightAdapter;
 		private List<string> mLeftDataSet;
 		private List<string> mRightDataSet;
+		private RecyclerView recyclerView;
+		private RecyclerView.Adapter adapter;
+		private RecyclerView.LayoutManager layoutManager;
+		private FloatingActionButton fab;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -42,7 +48,7 @@ namespace DrawerLayoutUI
 			mRightDrawer.Tag = 1;
 
 			SetSupportActionBar(mToolbar);
-		
+
 			mLeftDataSet = new List<string>();
 			mLeftDataSet.Add ("Left Item 1");
 			mLeftDataSet.Add ("Left Item 2");
@@ -85,6 +91,24 @@ namespace DrawerLayoutUI
 				//This is the first the time the activity is ran
 				SupportActionBar.SetTitle(Resource.String.closeDrawer);
 			}
+
+			// Set the contents of the recyclerview
+			recyclerView = FindViewById<RecyclerView>(Resource.Id.recycler_view);
+
+			// use a linear layout manager
+			layoutManager = new LinearLayoutManager (this);
+			recyclerView.SetLayoutManager (layoutManager);
+
+			// specify an adapter
+			adapter = new RecyclerViewAdapter (new [] { "Item 1", "Item 2", "Item 3", "Item 4" });
+
+			recyclerView.SetAdapter (adapter);
+
+			// Set up the FAB to be attached to the cardview
+			fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
+			fab.AttachToRecyclerView(recyclerView);
+			fab.Show();
+
 		}
 			
 		public override bool OnOptionsItemSelected (IMenuItem item)

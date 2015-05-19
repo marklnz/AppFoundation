@@ -1,3 +1,6 @@
-C:\Projects\DrawerLayout_V7_Tutorial\App_Foundation\bin\Debug\DrawerLayout_V7_Tutorial.dll
-C:\Projects\DrawerLayout_V7_Tutorial\App_Foundation\bin\Debug\Xamarin.Android.Support.v4.dll
-C:\Projects\DrawerLayout_V7_Tutorial\App_Foundation\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Projects\AppFoundation\App_Foundation\bin\Debug\AppFoundation.dll
+C:\Projects\AppFoundation\packages\Refractored.FloatingActionButton.1.3.4\lib\MonoAndroid10\Refractored.FloatingActionButton.dll
+C:\Projects\AppFoundation\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll
+C:\Projects\AppFoundation\packages\Xamarin.Android.Support.v7.AppCompat.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Projects\AppFoundation\packages\Xamarin.Android.Support.v7.CardView.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll
+C:\Projects\AppFoundation\packages\Xamarin.Android.Support.v7.RecyclerView.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll

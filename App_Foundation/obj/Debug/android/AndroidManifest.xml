@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="DrawerLayout_V7_Tutorial.DrawerLayout_V7_Tutorial">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Nz.Markl.AppFoundation">
   <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
-  <application android:label="DrawerLayout_V7_Tutorial" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="DrawerLayoutUI" android:theme="@style/MyTheme" android:name="md50b59b46f13d274041cc4ee3502d348e6.MainActivity" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="DrawerLayout_V7_Tutorial.DrawerLayout_V7_Tutorial.mono.MonoRuntimeProvider.__mono_init__" />
+  <application android:label="AppFoundation" android:name="mono.android.app.Application" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="DrawerLayoutUI" android:theme="@style/MyTheme" android:name="md5b3b5b100f51ea88a87950b81f7e0f78e.MainActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Nz.Markl.AppFoundation.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.DrawerLayout_V7_Tutorial.DrawerLayout_V7_Tutorial" />
+        <category android:name="mono.android.intent.category.SEPPUKU.Nz.Markl.AppFoundation" />
       </intent-filter>
     </receiver>
-    <activity android:icon="@drawable/icon" android:label="DrawerLayoutUI" android:theme="@style/Mono.Android.Theme.Splash" android:name="drawerlayout_v7_tutorial.drawerlayout_v7_tutorial.TrialSplashScreen" android:noHistory="true">
+    <activity android:icon="@drawable/icon" android:label="DrawerLayoutUI" android:theme="@style/Mono.Android.Theme.Splash" android:name="nz.markl.appfoundation.TrialSplashScreen" android:noHistory="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
